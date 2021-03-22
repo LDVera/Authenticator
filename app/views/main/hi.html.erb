@@ -1,0 +1,10 @@
+<%= form_tag "/hi", method: :post do %>
+  <div>
+    <%= label_tag :name, "nombre", style:"margin-left:5em; display: inline-block;" %>
+    <%= text_field_tag :name %>
+  </div>
+
+  <div>
+    <%= submit_tag "enviar" %>
+  </div>
+<% end %>

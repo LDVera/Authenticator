@@ -1,0 +1,10 @@
+<h1> hola desde erb index  </h1>
+<% @photos.each do |photo| %>
+  <div>
+    <h2> <%= photo.title %> </h2>
+    <%= image_tag photo.image_url %>
+    <%= link_to "Ver mas", "/photos/#{photo.id}" %>
+    <!-- en lugar de "/photos/#{photo.id}" tambien puede ser usado el
+    metodo photo que posteriormente sera convertido por rails en el plural -->
+  </div>
+<% end %> 
